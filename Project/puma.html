@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/b51659fc1e.js" crossorigin="anonymous"></script>
+    <title>Puma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+          
+            margin: 0%;
+            font-family: oswald;
+            font-weight: 300;
+        }
+        
+        .adbar{
+            border: 0.5px solid #8a7350;
+            margin-top:0%;
+            align-items: center;
+
+            color: white;
+            background-color: #8a7350;
+            width: 100%;
+            height: 44px;
+            font-size: 15px;
+            font-weight: 700;
+            /* text-align: center; */
+        }
+        .navbar{
+            /* border: 1px solid #181818; */
+            height: 78px;
+            width: 100%;
+            background-color: #181818;
+            margin-left: 0px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+        
+           
+        .logo{
+            margin-top: 4px;
+            margin-left: 28px;
+        }
+        .options{
+            width: 50%;
+            /* background-color: rgb(83, 83, 83); */
+            /* border: 2px solid rgb(255, 189, 189); */
+            display: flex;
+            flex-direction: row;
+            padding-left: 40px;
+            justify-content: space-between;
+            /* align-items: center; */
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+        }
+        .rightnav{
+            width: 136px;
+            height: 40px;
+            /* background-color: bisque; */
+            border-color: red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between ;
+            align-items: center ;
+            padding-left: 12px;
+            padding-right: 12px;
+            color: white;
+
+
+            
+        }
+        .search{
+            border: 1px solid #60666d;
+            width: 120px;
+            height: 40px;
+            border-radius: 2px;
+            margin-left: 320px;
+            margin-right: 24px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 12px;
+            padding-right: 12px;
+
+            justify-content: space-between;
+            justify-content: space-around;
+            
+        }
+        .redbox{
+            width: 100%;
+            background-color: #ac1f29; 
+            color: white;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 110px;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="adbar" >
+        <p style="text-align: center;">FREE DELIVERIES. FREE RETURNS</p>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="data:image/png;base64,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" 
+            alt="Logo" height="32px" width="34px"/>
+        </div>
+        <div class="options">
+            <div class="new"> <p>New</p></div>
+            <div class="women"><p>Women</p></div>
+            <div class="men"><p>Mens</p></div>
+            <div class="kids"><p>Kids</p></div>
+            <div class="fxp"><p>FENTYxPUMA</p></div>
+            <div class="motors"><p>Motorsports</p></div>
+            <div class="collab"><p>Collaborations</p></div>
+            <div class="sports"><p>Sports</p></div>
+            <div class="outlet"><p>Outlet</p></div>
+
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass" style="size: 24px;"></i>
+            <p style="font-size: 15px; font-weight: 700;">SEARCH</p>
+        </div>
+        <div class="rightnav">
+            <div class="fav">
+                <i class="fa-regular fa-heart" style="font-size: 18px;"></i>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping" style="font-size: 18px;"> </i>
+            </div>
+            <div class="profile">
+                <i class="fa-regular fa-user"style="font-size: 18px;"></i>
+            </div> 
+        </div>
+    
+
+
+
+
+
+
+
+
+    </div>
+    <div class="redbox">
+        <div>Text</div>
+    </div>    
+
+</body>
+</html>
