@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day15</title>
+    <style>
+        .parent{
+            display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+        }
+        .child{
+            margin-bottom:48px ;
+            margin-left: 24px;
+            height: 350px;
+        width: 18%;
+        border: 2px solid black;
+        align-items: center;
+        padding-left: 40px;
+        /* padding-top: 24px ; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testing flex box</h1>
+    <div class="parent">
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: rgb(208, 157, 255);">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3682292/pexels-photo-3682292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3682293/pexels-photo-3682293.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        <div class="child">
+            <div style="border-radius: 20px; width: 220px; height: 220px; background-color: blueviolet;">
+                <img src="https://images.pexels.com/photos/3782788/pexels-photo-3782788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BlackHeels"
+                height="250px" width="220px" style="border: 2px solid black;">
+
+            </div>
+        </div>
+        
+
+    </div>
+
+    <h1>Testing Positioning</h1>
+    <h3>Relative</h3>
+    <p>Original space is NOT alloted to next element</p>
+    <p>
+      Changes will be applied considering the original position of the element.
+    </p>
+    <div style="display: flex; flex-direction: row; ">
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            "
+        >1</div>
+    
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            position: relative;
+                top: 24px;
+                left: 30px;
+            "
+        >2 Relative Position</div>
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            "
+        >3</div>
+    </div>
+
+    <h3>Absolute</h3>
+    <p>Original space is alloted to the next element</p>
+    <p>
+      Changes will be applied from the edge of the screen (viewport screen).
+    </p>
+
+    <div style="display: flex; flex-direction: row; ">
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            "
+        >1</div>
+    
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            position: absolute;
+                top: 50%;
+                left: 30%;
+            "
+        >2 Absolute Postion</div>
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            color: white;
+            "
+        >3 Position alloted of 2nd</div>
+    </div>
+
+    <h3>Sticky</h3>
+    <br>
+
+    <div style="display: flex; flex-direction: row; height: 1000px; ">
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            "
+        >1</div>
+    
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            "
+        >2 Sticky Postion</div>
+        <div style="
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            color: white;
+            "
+        >3 </div>
+    </div>
+
+
+</body>
+</html>
